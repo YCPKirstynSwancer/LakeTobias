@@ -93,9 +93,7 @@ textarea {
 /* ==========================================================================
       Home Page
 ========================================================================== */
- /* Add your custom styles under Author Custom Styles, not in the page */
 
-   /* Header Section */
 
    header {
     background-color:#D9D465;
@@ -139,17 +137,16 @@ textarea {
    /* Homepage Hero */
 
    .hero{
-    width: 50%;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    margin: 0 auto;
+    margin: 0;
     }
 
     .hero img{
-        max-width: 1080px;
+        max-width: 1440px;
         height: auto;
     }
 
@@ -162,6 +159,25 @@ textarea {
     text-align: left;
     font-size: 1.1em;
     }
+
+
+
+#scrollphotos {
+  height: auto;
+  width: 1440px;
+  overflow: auto;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0;
+  height: auto;
+  width: 5760px;
+}
+
+
 
 
 
@@ -273,9 +289,89 @@ textarea {
 /* ==========================================================================
       Animals Page
 ========================================================================== */
+/* Main Animal Images*/
+.animals_section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AnimalImages{
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+.Ind_Photo{
+  width: 100%;
+  margin: 5px;
+}
+
+.Ind_Photo img{
+  display:flex;
+  flex-direction: row;
+  margin: auto;
+  width: 374px;
+  height: auto;
+}
 
 
 
+/*Hoverstate setup*/
+.Ind_Photo{
+  position: relative;
+  width:50%;
+}
+
+.image{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.Ind_Photo:hover .image {
+  opacity: 0.3;
+
+}
+
+.Ind_Photo:hover .middle {
+  opacity: 1;
+}
+
+.AnimalHoverName {
+  background-color: #D98E1D;
+  color: #072F0B;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 16px 32px;
+}
+
+
+
+/*Animal Modal Images*/
+.modal img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 374px;
+}
 
 
 
@@ -398,6 +494,7 @@ textarea {
 
 @media only screen and (max-width: 768px) {
     /* Style adjustments for viewports that meet the condition */
+
     .Schedule{
     font-size: 80%;
     text-align: center;

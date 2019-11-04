@@ -1,4 +1,4 @@
 # YCP Senior Project - Critical Mass
-<h1>Semester Long Responsive Senior Project</h1></br>
-<h2>Lake Tobias Website Redesign and Build</h2></br> 
+<h2>Semester Long Responsive Senior Project</h2></br>
+<h3>Lake Tobias Website Redesign and Build</h3></br> 
 More to Come!

@@ -164,7 +164,7 @@ textarea {
 
 #scrollphotos {
   height: auto;
-  width: 1440px;
+  width: 100%;
   overflow: auto;
 }
 
@@ -177,6 +177,58 @@ textarea {
   width: 5760px;
 }
 
+/* ----- Mobile Menu ---- */
+
+.sidenav {
+  height: 250px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #072F0B;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    top: 113px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FFFEDD;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.hamburger{
+  display: none;
+}
+
+/* ---- End Mobile Menu ----*/
 
 
 
@@ -498,13 +550,22 @@ textarea {
     .Schedule{
     font-size: 80%;
     text-align: center;
-
 }
 
    .footer-area{
      flex-direction: column;
      justify-content: center;
    }
+
+   .hideme{
+     display: none;
+   }
+
+   .hamburger{
+     display: flex;
+   }
+
+ }
 
 @media only screen and (max-width: 400px) {
     /* Style adjustments for viewports that meet the condition */

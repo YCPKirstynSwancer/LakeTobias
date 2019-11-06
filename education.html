@@ -19,17 +19,29 @@
 
 
   <!-- Add your site or application content here -->
-
   <!-- Header Section: this will be the same on each page. -->
   <header>
     <nav>
       <a href="index.html"><img src="img/LogoPlacehold.png" class="homelogo"></a>
-      <a href="about.html">About</a>
-      <a href="animals.html">Animals</a>
-      <a href="education.html">Education</a>
-      <a href="planyourvisit.html">Plan Your Visit</a>
+      <a href="about.html" class="hideme">About</a>
+      <a href="animals.html" class="hideme">Animals</a>
+      <a href="education.html" class="hideme">Education</a>
+      <a href="planyourvisit.html" class="hideme">Plan Your Visit</a>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="hamburger">&#9776;</span>
     </nav>
+
   </header>
+
+<!-- Mobile Menu -->
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="about.html">About</a>
+  <a href="animals.html">Animals</a>
+  <a href="education.html">Education</a>
+  <a href="planyourvisit.html">Plan Your Visit</a>
+</div>
+
+<!-- End Mobile Menu -->
 
 
   <!-- This is your main section after the header navbar-->
@@ -42,11 +54,55 @@
 </div>
 
 
+<!--Accordian Monthly Events-->
+
+<button class="accordion">May</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">June</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">July</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">August</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">September</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">October</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
 
 
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-
-
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
 
 
 

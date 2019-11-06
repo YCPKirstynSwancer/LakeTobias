@@ -18,32 +18,54 @@
 </head>
 
 
-  <!-- Header Section: this will be the same on each page. -->
-  <header>
-    <nav>
-      <a href="index.html"><img src="img/LogoPlacehold.png" class="homelogo"></a>
-      <a href="about.html">About</a>
-      <a href="animals.html">Animals</a>
-      <a href="education.html">Education</a>
-      <a href="planyourvisit.html">Plan Your Visit</a>
-    </nav>
-  </header>
+<!-- Header Section: this will be the same on each page. -->
+<header>
+  <nav>
+    <a href="index.html"><img src="img/LogoPlacehold.png" class="homelogo"></a>
+    <a href="about.html" class="hideme">About</a>
+    <a href="animals.html" class="hideme">Animals</a>
+    <a href="education.html" class="hideme">Education</a>
+    <a href="planyourvisit.html" class="hideme">Plan Your Visit</a>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="hamburger">&#9776;</span>
+  </nav>
 
+</header>
 
-  <!-- This is your main section after the header navbar-->
-  <section>
+<!-- Mobile Menu -->
+<div id="mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<a href="about.html">About</a>
+<a href="animals.html">Animals</a>
+<a href="education.html">Education</a>
+<a href="planyourvisit.html">Plan Your Visit</a>
+</div>
+
+<!-- End Mobile Menu -->
+<!-- This is your main section after the header navbar-->
+<!--Introduction to Animal Section-->
+  <section class="Animal_Intro">
     <div class="Animals">
       <h1>Meet Our Animals</h1>
-      <div class="Animal_Intro">
+      <div class="Animal_Summary">
         Playing host to a wide variety of exotic mammals, birds and reptiles, Lake Tobias Wildlife Park in Halifax, PA offers the perfect opportunity for a day packed full of family fun. Our constantly evolving collection of animals features species collected from across the world, from the deserts of Eastern Africa to the forests of North America.
+      </div>
+      <div class="Animal_Classification">
+        <a href="#SmoothScrollMammals">Mammals</a>
+        <a href="#SmoothScrollBirds">Birds</a>
+        <a href="#SmoothScrollReptilesandAmphibians">Reptiles and Amphibians</a>
+        <a href="#SmoothScrollFish">Fish</a>
       </div>
     </div>
   </section>
 
-<!--Mammals-->
+
+
+
+<!--End Introduction to Animals-->
+<!--Mammals Section-->
 
 <section class="animals_section">
-<div class="AnimalImages">
+<div class="MammalsTitle" id="SmoothScrollMammals">
 <h1>Mammals</h1>
 </div>
 </section>
@@ -201,8 +223,13 @@
 </div>
 </section>
 
-<!--Birds-->
+<!--End Mammal Section-->
+<!--Birds Section-->
+<section class="animals_section">
+<div class="BirdsTitle" id="SmoothScrollBirds">
 <h1>Birds</h1>
+</div>
+</section>
 
 <section class="animals_section">
   <div class="AnimalImages">
@@ -234,9 +261,13 @@
 </div>
 </section>
 
-
-<!--Reptiles and Amphibians-->
+<!--End Birds Section-->
+<!--Reptiles and Amphibians Section-->
+<section class="animals_section">
+<div class="ReptilesandAmphibiansTitle" id="SmoothScrollReptilesandAmphibians">
 <h1>Reptiles & Amphibians</h1>
+</div>
+</section>
 
 <section class="animals_section">
   <div class="AnimalImages">
@@ -269,10 +300,9 @@
 </div>
 </section>
 
-
-<!-- These are your speaker modals...change the id and the <a href=""> in the above links to connect these-->
-
-<!--Mammals-->
+<!--End Reptiles and Amphibians Section-->
+<!-- Animal modals=connected to the above-->
+<!--Mammals Modals-->
 
 <div id="africanlion" class="modal">
 <h3>African Lion</h3>
@@ -427,8 +457,8 @@
     <a href="#" rel="modal:close"></a>
 </div>
 
-
-<!--Birds-->
+<!--End Mammals Modals-->
+<!--Birds Modals-->
 
 
 <div id="ostrich" class="modal">
@@ -455,9 +485,8 @@
     <a href="#" rel="modal:close"></a>
 </div>
 
-
-
-<!--Reptiles and Amphibians-->
+<!--End Birds Modals-->
+<!--Reptiles and Amphibians Modals-->
 
 
 <div id="americanalligator" class="modal">
@@ -484,7 +513,7 @@
     <a href="#" rel="modal:close"></a>
 </div>
 
-
+<!--End Reptiles and Amphibians Modals-->
 
 
 

@@ -93,8 +93,7 @@ textarea {
 /* ==========================================================================
       Home Page
 ========================================================================== */
-
-
+/*Header*/
    header {
     background-color:#D9D465;
     width: 100%;
@@ -134,48 +133,7 @@ textarea {
   width:80%;
   height:auto;
 }
-   /* Homepage Hero */
 
-   .hero{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    margin: 0;
-    }
-
-    .hero img{
-        max-width: 1440px;
-        height: auto;
-    }
-
-    .hero h1{
-      text-align: center;
-    }
-
-    .intro{
-    width: 50%;
-    text-align: left;
-    font-size: 1.1em;
-    }
-
-
-
-#scrollphotos {
-  height: auto;
-  width: 100%;
-  overflow: auto;
-}
-
-#content {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  margin: 0;
-  height: auto;
-  width: 5760px;
-}
 
 /* ----- Mobile Menu ---- */
 
@@ -229,9 +187,50 @@ textarea {
 }
 
 /* ---- End Mobile Menu ----*/
+/*----Scroll Photo----*/
 
+#scrollphotos {
+  height: auto;
+  width: 100%;
+  overflow: auto;
+}
 
+#content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0;
+  height: auto;
+  width: 5760px;
+}
 
+/* End Scroll Photo */
+/* Homepage Hero */
+
+.hero{
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: flex-end;
+ margin: 0;
+ }
+
+ .hero img{
+     max-width: 1440px;
+     height: auto;
+ }
+
+ .hero h1{
+   text-align: center;
+ }
+
+ .intro{
+ width: 50%;
+ text-align: left;
+ font-size: 1.1em;
+ }
+/* End Homepage Hero */
 
     /* Footer Section */
 
@@ -322,7 +321,7 @@ textarea {
        margin: 5px 15px;
        font-size: 1.1em;
    }
-
+/* End Footer Section */
 
 /* ==========================================================================
       About Page
@@ -341,6 +340,51 @@ textarea {
 /* ==========================================================================
       Animals Page
 ========================================================================== */
+/*Animal Intro*/
+.Animal_Intro{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 25% 0 25%;
+}
+
+.Animal_Classification{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  color: #072F0B;
+  font-size: 28px;
+
+
+}
+
+#SmoothScrollMammals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#SmoothScrollBirds {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#SmoothScrollReptilesandAmphibians {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#SmoothScrollFish {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 /* Main Animal Images*/
 .animals_section{
   display: flex;
@@ -371,7 +415,7 @@ textarea {
 }
 
 
-
+/* End Main Animal Images*/
 /*Hoverstate setup*/
 .Ind_Photo{
   position: relative;
@@ -414,9 +458,7 @@ textarea {
   font-weight: 600;
   padding: 16px 32px;
 }
-
-
-
+/*End Hoverstate setup*/
 /*Animal Modal Images*/
 .modal img{
   display: flex;
@@ -424,15 +466,53 @@ textarea {
   align-items: center;
   width: 374px;
 }
-
-
+/*End Animal Modal Images*/
 
 
 
 /* ==========================================================================
       Education
 ========================================================================== */
+/*Accordian Monthly Events*/
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #86C3B1;
+  color: #072F0B;
+  cursor: pointer;
+  padding: 18px;
+  margin: 12px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
 
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #D98E1D;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+/*Add a symbol to each button to indicate whether the collapsible content is open or closed:*/
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
 
 
 

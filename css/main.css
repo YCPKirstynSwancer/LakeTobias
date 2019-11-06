@@ -326,6 +326,78 @@ textarea {
 /* ==========================================================================
       About Page
 ========================================================================== */
+.About_Intro{
+  margin-bottom: 50px;
+}
+
+.Title_Section{
+    display: flex;
+    align-items: left;
+    padding: 12px;
+    margin: 12px 0 0 90px;
+}
+#titlesection{
+  color: #D98E1D;
+  font-weight: 600;
+  font-size: 48px;
+}
+
+#aboutintro{
+  color: #7A3122;
+}
+
+
+.About_Section{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  color: #072F0B;
+  font-size: 28px;
+  line-height: 1.6em;
+
+}
+.About_Section:hover a{
+  color: #072F0B;
+}
+
+.about_intro_content {
+    width: 70%;
+    margin: 0 20px 0 20px;
+    padding: 0 10px 0 10px;
+    line-height: 1.6em;
+}
+
+.Intro_Content{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90vw;
+}
+
+.About_Body{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90vw;
+}
+.Giraffe{
+  display: flex;
+  align-items: left;
+  padding: 12px;
+  margin: 12px 0 0 90px;
+}
+
+#SmoothScrollGiraffes {
+  display: flex;
+  justify-content: left;
+  color: #D98E1D;
+  font-weight: 600;
+  font-size: 48px;
+}
+
 
 
 
@@ -342,11 +414,23 @@ textarea {
 ========================================================================== */
 /*Animal Intro*/
 .Animal_Intro{
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 25% 0 25%;
+  margin-bottom: 50px;
+}
+
+.Title_Section{
+    display: flex;
+    align-items: left;
+    padding: 12px;
+    margin: 12px 0 0 90px;
+}
+#titlesection{
+  color: #D98E1D;
+  font-weight: 600;
+  font-size: 48px;
+}
+
+#animalintro{
+  color: #7A3122;
 }
 
 .Animal_Classification{
@@ -356,9 +440,30 @@ textarea {
   text-align: left;
   color: #072F0B;
   font-size: 28px;
-
+  line-height: 1.6em;
 
 }
+.Animal_Classification:hover a{
+  color: #072F0B;
+}
+
+.animal_intro_content {
+    width: 50%;
+    margin: 0 20px 0 20px;
+    padding: 0 10px 0 10px;
+    line-height: 1.6em;
+}
+
+.Animal_Summary{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90vw;
+}
+
+
+
 
 #SmoothScrollMammals {
   display: flex;
@@ -385,6 +490,8 @@ textarea {
 }
 
 
+
+/*End Animal Intro*/
 /* Main Animal Images*/
 .animals_section{
   display: flex;
@@ -474,21 +581,19 @@ textarea {
       Education
 ========================================================================== */
 /*Accordian Monthly Events*/
-/* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   background-color: #86C3B1;
   color: #072F0B;
   cursor: pointer;
   padding: 18px;
   margin: 12px;
-  width: 100%;
+  width: 25%;
   text-align: center;
   border: none;
   outline: none;
   transition: 0.4s;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
   background-color: #D98E1D;
 }
@@ -496,25 +601,27 @@ textarea {
 /* Style the accordion panel. Note: hidden by default */
 .panel {
   padding: 0 18px;
-  background-color: white;
+  background-color: #FFFEDD;
+  width: 25%;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
 /*Add a symbol to each button to indicate whether the collapsible content is open or closed:*/
 .accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  content: '\02795'; /* Unicode character (+) */
   font-size: 13px;
-  color: #777;
+  color: #072F0B;
   float: right;
   margin-left: 5px;
 }
 
 .active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "\2796"; /* Unicode character (-) */
+  color: #7A3122;
 }
 
-
+/*End Accordian Monthly Events*/
 
 
 

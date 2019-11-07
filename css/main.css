@@ -422,7 +422,14 @@ h1{
     line-height: 1.6em;
 }
 
-#SmoothScrollGiraffes {
+#SmoothScrollGiraffes
+#SmoothScrollSafari
+#SmoothScrollPettingZoo
+#SmoothScrollZooExibits
+#SmoothScrollReptilesandExotics
+#SmoothScrollBabyAnimal
+#SmoothScrollMuseum
+#SmoothScrollParkInfo {
   display: flex;
   justify-content: left;
   color: #D98E1D;
@@ -611,6 +618,58 @@ h1{
 /* ==========================================================================
    Plan Your Visit
    ========================================================================== */
+   /* Contact Us */
+
+   .contactUs{
+     width: 90vw;
+   }
+
+   .contactUs_content{
+     position: relative;
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 0 auto;
+     width: 80%;
+     padding: 1%;
+   }
+
+   input{
+     width: 500px;
+     border: none;
+     margin: 5px;
+     height: 30px;
+     padding: 10px;
+     box-shadow: none;
+     background-color: #86C3B1;
+   }
+
+   textarea{
+     width: 525px;
+     min-height: 500px;
+     border: none;
+     margin: 5px;
+     height: 30px;
+     box-shadow: none;
+     background-color: #86C3B1;
+   }
+
+   input.Submit_Button{
+     width: 200px !important;
+     height: 50px;
+     color: black;
+     background-color: #86C3B1;
+     position: relative;
+     box-shadow: none;
+     margin-left: 33%;
+   }
+
+   input.Submit_Button:hover{
+     background-color: #D98E1D;
+     color: #000;
+   }
 
 
 

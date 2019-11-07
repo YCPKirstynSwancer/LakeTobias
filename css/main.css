@@ -329,7 +329,7 @@ h1{
 /* End Footer Section */
 
 /* ==========================================================================
-      About Page
+      Reusable Sections
 ========================================================================== */
 .MajorSection{
   width: 100vw;
@@ -386,7 +386,6 @@ h1{
 }
 
 
-
 .right_maincontent{
   display: flex;
   justify-content: center;
@@ -395,24 +394,12 @@ h1{
   flex-direction: column;
   padding: 2%;
 }
-
-
-.Title_Section{
-    display: flex;
-    align-items: left;
-    padding: 12px;
-    margin: 12px 0 0 90px;
-}
-#titlesection{
-  color: #D98E1D;
-  font-weight: 600;
-  font-size: 48px;
-}
-
-#aboutintro{
-  color: #7A3122;
-}
-
+/* ==========================================================================
+      End Reusable Sections
+========================================================================== */
+/* ==========================================================================
+      About Section
+========================================================================== */
 
 .About_Section{
   flex-direction: column;
@@ -424,7 +411,6 @@ h1{
   line-height: 1.6em;
 }
 
-
 .About_Section:hover a{
   color: #072F0B;
 }
@@ -434,34 +420,6 @@ h1{
     margin: 0 20px 0 20px;
     padding: 0 10px 0 10px;
     line-height: 1.6em;
-}
-
-.main_content{
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  width: 70%;
-}
-
-.sidebar_content{
-  width: 28%;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-.About_Body{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  width: 90vw;
-}
-.Giraffe{
-  display: flex;
-  align-items: left;
-  padding: 12px;
-  margin: 12px 0 0 90px;
 }
 
 #SmoothScrollGiraffes {
@@ -486,58 +444,7 @@ h1{
 /* ==========================================================================
       Animals Page
 ========================================================================== */
-/*Animal Intro*/
-.Animal_Intro{
-  margin-bottom: 50px;
-}
-
-.Title_Section{
-    display: flex;
-    align-items: left;
-    padding: 12px;
-    margin: 12px 0 0 90px;
-}
-#titlesection{
-  color: #D98E1D;
-  font-weight: 600;
-  font-size: 48px;
-}
-
-#animalintro{
-  color: #7A3122;
-}
-
-.Animal_Classification{
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  text-align: left;
-  color: #072F0B;
-  font-size: 28px;
-  line-height: 1.6em;
-
-}
-.Animal_Classification:hover a{
-  color: #072F0B;
-}
-
-.animal_intro_content {
-    width: 50%;
-    margin: 0 20px 0 20px;
-    padding: 0 10px 0 10px;
-    line-height: 1.6em;
-}
-
-.Animal_Summary{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  width: 90vw;
-}
-
-
-
+/*Animal Intro paragraph uses styling from the reusable section above*/
 
 #SmoothScrollMammals {
   display: flex;
@@ -563,9 +470,8 @@ h1{
   align-items: center;
 }
 
-
-
 /*End Animal Intro*/
+
 /* Main Animal Images*/
 .animals_section{
   display: flex;
@@ -655,6 +561,7 @@ h1{
       Education
 ========================================================================== */
 /*Accordian Monthly Events*/
+
 .accordion {
   background-color: #86C3B1;
   color: #072F0B;

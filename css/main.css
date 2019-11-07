@@ -20,6 +20,7 @@ html {
     background-color: #ffff;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 
 }
 
@@ -90,6 +91,14 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+h1{
+   color: #D98E1D;
+   font-weight: 600;
+   font-size: 3.2rem;
+   margin: 0 auto;
+   line-height: 3rem;
+ }
+
 /* ==========================================================================
       Home Page
 ========================================================================== */
@@ -101,11 +110,7 @@ textarea {
     text-align: center;
   }
 
-  h1,
-  h2,
-  h3{
-    color: #072F0B;
-  }
+
 
   header nav{
     width: 90%;
@@ -326,9 +331,71 @@ textarea {
 /* ==========================================================================
       About Page
 ========================================================================== */
-.About_Intro{
-  margin-bottom: 50px;
+.MajorSection{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
 }
+
+.centerme{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 2%;
+  flex-direction: row;
+}
+
+.centerme_column{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+  flex-direction: column;
+}
+
+.main_content{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.sidebar_content{
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.left_maincontent{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  flex-direction: column;
+  padding: 2%;
+}
+
+.left_maincontent h1{
+  margin: 0 auto;
+}
+
+
+
+.right_maincontent{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  flex-direction: column;
+  padding: 2%;
+}
+
 
 .Title_Section{
     display: flex;
@@ -355,25 +422,32 @@ textarea {
   color: #072F0B;
   font-size: 28px;
   line-height: 1.6em;
-
 }
+
+
 .About_Section:hover a{
   color: #072F0B;
 }
 
 .about_intro_content {
-    width: 70%;
+    width: 75%;
     margin: 0 20px 0 20px;
     padding: 0 10px 0 10px;
     line-height: 1.6em;
 }
 
-.Intro_Content{
-  position: relative;
+.main_content{
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  width: 90vw;
+  width: 70%;
+}
+
+.sidebar_content{
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 .About_Body{
@@ -587,7 +661,7 @@ textarea {
   cursor: pointer;
   padding: 18px;
   margin: 12px;
-  width: 25%;
+  width: 40%;
   text-align: center;
   border: none;
   outline: none;
@@ -602,7 +676,7 @@ textarea {
 .panel {
   padding: 0 18px;
   background-color: #FFFEDD;
-  width: 25%;
+  width: 40%;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;

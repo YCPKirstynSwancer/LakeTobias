@@ -103,11 +103,16 @@ h1{
       Home Page
 ========================================================================== */
 /*Header*/
+  .headimg{
+    background-image: url('../img_headopt1.jpg');
+  }
+
    header {
-    background-color:#D9D465;
+    background-image:
     width: 100%;
     padding: 40px;
     text-align: center;
+    color: #072F0B;
   }
 
 
@@ -218,11 +223,11 @@ h1{
  flex-direction: column;
  justify-content: center;
  align-items: flex-end;
- margin: 0;
+ width: 100%;
  }
 
  .hero img{
-     max-width: 1440px;
+     max-width: 100%;
      height: auto;
  }
 
@@ -230,12 +235,52 @@ h1{
    text-align: center;
  }
 
+ .hero1{
+   background-image: url('../img/homepgimgs/Giraffe.jpg');
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+ }
+
+ .hero2{
+   background-image: url('../img/homepgimgs/emu.jpg');
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+ }
+
  .intro{
  width: 50%;
  text-align: left;
  font-size: 1.1em;
+ height: 95vh;
+ position: relative;
  }
+
+ .positionme {
+    left: 30%;
+    position: relative;
+    top: 32%;
+}
 /* End Homepage Hero */
+
+/* Slick Settings */
+
+.slick-prev {
+    left: 100px !important;
+    z-index: 100;
+}
+
+button.slick-prev.slick-arrow {
+}
+
+.slick-next {
+    right: 100px !important;
+    z-index: 100;
+}
+
+button.slick-next.slick-arrow {
+}
 
     /* Footer Section */
 
@@ -402,17 +447,36 @@ h1{
 ========================================================================== */
 
 .About_Section{
-  flex-direction: column;
+  flex-direction: row;
   display: flex;
-  justify-content: center;
   text-align: left;
   color: #072F0B;
   font-size: 28px;
   line-height: 1.6em;
 }
 
-.About_Section:hover a{
+
+.About_Section a{
   color: #072F0B;
+}
+.About_Section a:hover{
+  color: blue;
+}
+
+img.deerlink:hover {
+    display: inline;
+}
+
+.deerlink{
+  width: 15px;
+  height: auto;
+  margin-right: 10px;
+  display: none;
+}
+
+.deerlink img{
+  width: 15px;
+  height: auto;
 }
 
 .about_intro_content {

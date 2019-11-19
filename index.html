@@ -14,22 +14,32 @@
   <!-- Place favicon.ico in the root directory -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+
+  <!--Slick Move Photos-->
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
+
 </head>
+
 
 
   <!-- Add your site or application content here -->
 
   <!-- Header Section: this will be the same on each page. -->
   <header>
+    <div class="headimg">
+    <div="navbar">
     <nav>
-      <a href="index.html"><img src="img/LogoPlacehold.png" class="homelogo"></a>
+      <a href="index.html"><img src="img/LakeTobiasLogo.svg" class="homelogo"></a>
       <a href="about.html" class="hideme">About</a>
       <a href="animals.html" class="hideme">Animals</a>
       <a href="education.html" class="hideme">Education</a>
       <a href="planyourvisit.html" class="hideme">Plan Your Visit</a>
       <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="hamburger">&#9776;</span>
     </nav>
-
+  </div>
+  </div>
   </header>
 
 <!-- Mobile Menu -->
@@ -45,26 +55,27 @@
 
 
   <!-- This is your main section after the header navbar-->
-  <section>
-    <div class="hero">
-        <div id="scrollphotos">
-          <div id="content">
-            <img src="img/minihorse.jpg" class="panthrough">
-            <img src="img/Giraffe.jpg" class="panthrough">
-            <img src="img/emu.jpg" class="panthrough">
-            <img src="img/kangaroo.jpg" class="panthrough">
-          </div>
+    <!--Slick Move Photos-->
+  <div class="hero slider single-item">
+    <div class="hero1">
+      <div class="intro">
+        <div class="positionme">
+        <h1>ADVENTURE AT ITS WILDEST!</h1>
+          <p>Lake Tobias Wildlife Park combines the best of both worlds as a fully operational farm and a stunning zoo with an open air safari, reptile habitat, petting zoo, and more.</p>
         </div>
-<!--Creating Scrolling Function-->
-<div class="intro">
-  <h1>ADVENTURE AT ITS WILDEST!</h1>
-    <p>Lake Tobias Wildlife Park combines the best of both worlds as a fully operational farm and a stunning zoo with an open air safari, reptile habitat, petting zoo, and more.</p>
-</div>
+      </div></div>
+    <div class="hero2"><div class="intro">
 
+      <div class="positionme">
+      <h1>ADVENTURE AT ITS WILDEST!</h1>
+        <p>Lake Tobias Wildlife Park combines the best of both worlds as a fully operational farm and a stunning zoo with an open air safari, reptile habitat, petting zoo, and more.</p>
+      </div>
     </div>
+  </div>
+  </div>
 
 
-  </section>
+
 
 
 
@@ -93,7 +104,7 @@
           <img src="img/facebooklogo.png">
         </div>
         <div class="footerlogo">
-          <a href="index.html"><img src="img/LogoPlacehold.png" class="homelogo"></a>
+          <a href="index.html"><img src="img/LakeTobiasLogo.svg" class="homelogo"></a>
         </div>
       </div>
     </footer>
@@ -104,12 +115,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <script>
-      function myFunction() {
-        var elmnt = document.getElementById("myDIV");
-        elmnt.scrollLeft = 50;
-        elmnt.scrollTop = 10;
-      }
-      </script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/hero.js"></script>
+
 </body>
 </html>

@@ -43,6 +43,7 @@
 
 <!-- End Mobile Menu -->
 
+<button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
 
   <!-- This is your main section after the header navbar-->
 
@@ -63,8 +64,10 @@
 
 
       <div class="right_maincontent">
-        <h2>Register</h2>
+        <div class"Registerbutton">
+        <a href="register.html" class="hideme"><h2>Register</h2></a>
       </div>
+    </div>
     </div>
   </section>
 
@@ -154,6 +157,29 @@
     </footer>
 
 
+<!--Back to Top Button-->
+    <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+<!--End Back to Top Button-->
 
     <script src="js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>

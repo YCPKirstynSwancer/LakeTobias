@@ -41,6 +41,7 @@
 </div>
 
 <!-- End Mobile Menu -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
 <!-- This is your main section after the header navbar-->
 <!--Introduction to Animal Section-->
 <section class="MajorSection">
@@ -132,9 +133,9 @@
   </div>
 </div></a>
 
-<a href="#replacefallow" rel="modal:open">
+<a href="#FallowDeer" rel="modal:open">
 <div class="Ind_Photo">
-  <img src="img/animalimgs/replacefallow.jpg" alt="mammals" class="image">
+  <img src="img/animalimgs/FallowDeer.jpg" alt="mammals" class="image">
   <div class="middle">
   <div class="AnimalHoverName">European Fallow Deer</div>
   </div>
@@ -357,9 +358,9 @@
     <a href="#" rel="modal:close"></a>
 </div>
 
-<div id="replacefallow" class="modal">
+<div id="FallowDeer" class="modal">
   <h3>European Fallow Deer</h3>
-    <img src="img/animalimgs/replacefallow.jpg" alt="mammals">
+    <img src="img/animalimgs/FallowDeer2.jpg" alt="mammals">
     <p>Fallow deer are found in Europe and come in three colors- dark brown, white and spotted. Just because a female fallow deer is one color does not mean her offspring will be the same color as her. In fact, she could give birth to any of the three color phases.</br>Male fallow deer have a palmed antler much like that of a moose. If the antler is nine inches across, it is considered to be a good sized antler. These antlers will fall off each year and regrow again in the spring.</br>Fallow deer live in herds of around 70 members and prefer to live in wooded areas. They eat grass, leaves, nuts, berries, corn and bark.
     </p>
     <a href="#" rel="modal:close"></a>
@@ -553,7 +554,31 @@
     </footer>
 
 
+    <!--Back to Top Button-->
+        <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+    <!--End Back to Top Button-->
 <!-- jQuery Modal -->
+
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />

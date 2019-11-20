@@ -22,6 +22,7 @@
 		<a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a> <a href="about.html">About</a> <a href="animals.html">Animals</a> <a href="education.html">Education</a> <a href="planyourvisit.html">Plan Your Visit</a>
 	</div><!-- End Mobile Menu -->
 	<!-- This is main section after the header navbar-->
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
 	<!--Introduction to About Section-->
 	<section class="MajorSection">
     <div class="centerme">
@@ -266,31 +267,57 @@
 		<div class="left_maincontent">
 				<h1 id="SmoothScrollMuseum">JR Tobias Museum & Education Center</h1>
 				<br/>
-			<p>The award-winning J.R. Tobias Museum & Education Center tells the story of how a marine turned his family homestead into a sprawling zoo that became a favorite family attraction for over 180,000 park visitors each year. Using videos, photos, artifacts, and hands-on exhibits, the museum entertains and educates visitors on the making of the park, the founder’s love of wildlife, and how we can all contribute to the conservation of our world’s endangered wildlife. At its inception, the J.R. Tobias Museum & Education Center was awarded the New Attraction of the Year award by the Hershey Harrisburg Regional Visitor’s Bureau.
+				<h2>Times</h2>
+				<p>Museum opens every day at 11:00 a.m. and closes when the park closes	</p>
+				<p>The award-winning J.R. Tobias Museum & Education Center tells the story of how a marine turned his family homestead into a sprawling zoo that became a favorite family attraction for over 180,000 park visitors each year. Using videos, photos, artifacts, and hands-on exhibits, the museum entertains and educates visitors on the making of the park, the founder’s love of wildlife, and how we can all contribute to the conservation of our world’s endangered wildlife. At its inception, the J.R. Tobias Museum & Education Center was awarded the New Attraction of the Year award by the Hershey Harrisburg Regional Visitor’s Bureau.
 			<p/>
-			<h2>Animals on Display</h2>
-			<p>
-				In addition to the educational exhibits about the park and endangered animals, the museum also includes animal exhibits. While you’re here you can check out the beautiful toucans and a 500 gallon freshwater aquarium featuring jaquar and motoro stingrays, a silver arowana, and more.
-				<p/>
+
 		</div>
 
 		<div class="right_maincontent">
 			<div class="content_img">
 				<img src="img/aboutpgimgs/museum.jpg">
 			</div>
-			<h2>Times</h2>
-			<p>Museum opens every day at 11:00 a.m. and closes when the park closes	</p>
+			<h2>Animals on Display</h2>
+			<p>
+				In addition to the educational exhibits about the park and endangered animals, the museum also includes animal exhibits. While you’re here you can check out the beautiful toucans and a 500 gallon freshwater aquarium featuring jaquar and motoro stingrays, a silver arowana, and more.
+			<p/>
 		</div>
 	</div>
 </section>
 <!--End About JR Tobias Museum & Education Center Section-->
 <!-- About Park Info Section-->
+<section class="MajorSection">
+	<div class="CenterSection">
+
+				<h1 id="SmoothScrollParkInfo">Park Information</h1>
+				<br/>
+				<div class="center_content">
+				<h2>Our Vision</h2>
+				<p>Here at Lake Tobias Wildlife Park, we believe in providing an accessible, affordable way for people to learn more about the natural world and the creatures that live in it. Interacting directly with our animals helps foster a love of nature that can last a lifetime, and enjoying wildlife makes a great family activity that creates a bond between generations. We’re a family-owned and -operated business, and we have more than 50 years of experience giving residents and visitors up-close encounters with wildlife. </p>
+				<h2>Hours of Operation</h2>
+				<p>Open Weekdays (May - Labor Day), Monday - Friday 10:00 a.m. - 5:30 p.m.
+				</br> Open Weekends (May-August), 10:00 a.m. - 6:30 p.m.
+			</br>Open Weekends only in September and October 9:30 a.m. - 5:30 p.m.
+			</br> Columbus Day 10:00 a.m. – 6:00 p.m.
+			<p/>
+				<h2>Rates</h2>
+
+		</div>
+</section>
 
 
 
 
 
 
+
+
+
+
+
+
+<!-- End About Park Info Section-->
 
 
 	<footer>
@@ -311,6 +338,33 @@
 			</div>
 		</div>
 	</footer>
+
+	<!--Back to Top Button-->
+	    <script>
+	    //Get the button
+	    var mybutton = document.getElementById("myBtn");
+
+	    // When the user scrolls down 20px from the top of the document, show the button
+	    window.onscroll = function() {scrollFunction()};
+
+	    function scrollFunction() {
+	      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	        mybutton.style.display = "block";
+	      } else {
+	        mybutton.style.display = "none";
+	      }
+	    }
+
+	    // When the user clicks on the button, scroll to the top of the document
+	    function topFunction() {
+	      document.body.scrollTop = 0;
+	      document.documentElement.scrollTop = 0;
+	    }
+	    </script>
+	<!--End Back to Top Button-->
+
+
+
 	<script src="js/vendor/modernizr-3.6.0.min.js">
 	</script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js">

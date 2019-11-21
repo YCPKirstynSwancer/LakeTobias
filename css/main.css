@@ -123,28 +123,32 @@ h1{
       Home Page
 ========================================================================== */
 /*Header*/
-  .headimg{
-    background-image: url('../img/homepgimgs/headertester.png');
+
+header {
+ width: 100%;
+ height: 215px;
+ text-align: center;
+ color: #072F0B;
+ z-index: 100;
+ background-image: url('../img/homepgimgs/headertester.png');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.headimg{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     width: 100vw;
   }
 
-   header {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    color: #072F0B;
-  }
-
-
-
   header nav{
     width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
   }
 
   header nav a{
@@ -230,6 +234,10 @@ h1{
  justify-content: center;
  align-items: flex-end;
  width: 100%;
+ height: 738px;
+ position: relative;
+ top: -50px;
+ z-index: -50;
  }
 
  .hero img{
@@ -266,7 +274,7 @@ h1{
  .positionme {
     left: 50%;
     position: relative;
-    top: 5%;
+    top: 10%;
 }
 .positionmeemu {
    left: 20%;
@@ -408,6 +416,19 @@ button.slick-next.slick-arrow {
   flex-direction: row;
 }
 
+.centerme_about{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 2%;
+  flex-direction: row;
+}
+
+.centerme_about h2{
+  /* add styling */
+}
+
 .centerme_column{
   width: 90%;
   display: flex;
@@ -462,15 +483,23 @@ button.slick-next.slick-arrow {
 /* ==========================================================================
       About Section
 ========================================================================== */
-.CenterSection !Important{
+.CenterSection{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-.center_content !Important{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.CenterSection h1 {
+    position: relative;
+    left: -344px;
+}
+
+.center_content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 65%;
 }
 
 .About_Section{
@@ -708,6 +737,13 @@ img.deerlink:hover {
 }
 
 /*End Accordian Monthly Events*/
+
+.Registerbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90%;
+}
 
 
 

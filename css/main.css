@@ -102,13 +102,13 @@ h1{
  #myBtn {
   display: none;
   position: fixed;
-  top: 20px;
+  bottom: 20px;
   right: 30px;
   z-index: 99;
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #D9D465;
+  background-color: #D98E1D;
   color: #072F0B;
   cursor: pointer;
   padding: 15px;
@@ -130,7 +130,7 @@ header {
  text-align: center;
  color: #072F0B;
  z-index: 100;
- background-image: url('../img/homepgimgs/headertester.png');
+ background-image: url('../img/homepgimgs/headermark.png');
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -272,9 +272,9 @@ background-size: cover;
  }
 
  .positionme {
-    left: 50%;
+    left: 105%;
     position: relative;
-    top: 10%;
+    top: 35%;
 }
 .positionmeemu {
    left: 20%;
@@ -306,10 +306,16 @@ button.slick-next.slick-arrow {
 
     /* Footer Section */
 
-    footer {
-     background-color: #D9D465;
-     width: 100%;
-     padding: 2%;
+footer {
+    width: 100%;
+    height: 215px;
+    text-align: center;
+    color: #072F0B;
+    z-index: 100;
+    background-image: url('../img/homepgimgs/footermark.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
    }
 
    .footer-area{
@@ -317,15 +323,15 @@ button.slick-next.slick-arrow {
      display: flex;
      justify-content: space-between;
      align-items: center;
-     margin: 3px;
      flex-direction: row;
+     margin: 0 auto;
    }
 
 .footeraddress{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin-top: 4%;
   width: 100%;
 }
 
@@ -337,7 +343,7 @@ button.slick-next.slick-arrow {
      display: flex;
      justify-content: center;
      align-items: center;
-     margin: auto;
+     margin-top: 4%;
      width: 100%;
    }
 
@@ -358,13 +364,13 @@ button.slick-next.slick-arrow {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin-top: 2%;
   width: 100%;
 }
 
 .footerlogo img{
   max-width: 100%;
-  min-width: 350px;
+  min-width: 300px;
 
 }
 
@@ -372,7 +378,7 @@ button.slick-next.slick-arrow {
      display: flex;
      justify-content: center;
      align-items: center;
-     margin: auto;
+     margin-top: 4%;
      flex-direction: row;
      width: 100%;
    }
@@ -426,7 +432,8 @@ button.slick-next.slick-arrow {
 }
 
 .centerme_about h2{
-  /* add styling */
+  text-align: right;
+  padding-right: 3%;
 }
 
 .centerme_column{
@@ -462,7 +469,7 @@ button.slick-next.slick-arrow {
 }
 
 .left_maincontent h1{
-  margin: 0 auto;
+  margin-left: 0;
 }
 
 
@@ -508,15 +515,29 @@ button.slick-next.slick-arrow {
   text-align: left;
   color: #072F0B;
   font-size: 28px;
-  line-height: 1.6em;
+  line-height: 2.5em;
 }
-
+.About_Section_2lines{
+  flex-direction: row;
+  display: flex;
+  text-align: left;
+  color: #072F0B;
+  font-size: 28px;
+  line-height: 1.2em;
+}
 
 .About_Section a{
   color: #072F0B;
 }
+.About_Section_2lines a{
+  color: #072F0B;
+}
+
 .About_Section a:hover{
-  color: blue;
+  color: #86C3B1;
+}
+.About_Section_2lines a:hover{
+  color: #86C3B1
 }
 
 img.deerlink:hover {
@@ -541,6 +562,9 @@ img.deerlink:hover {
     padding: 0 10px 0 10px;
     line-height: 1.6em;
 }
+.about_intro_content h1{
+  font-size: 3em;
+}
 
 #SmoothScrollGiraffes
 #SmoothScrollSafari
@@ -557,7 +581,10 @@ img.deerlink:hover {
   font-size: 48px;
 }
 
-
+.map_img img{
+  width: 70%;
+  height: auto;
+}
 
 
 
@@ -745,6 +772,13 @@ img.deerlink:hover {
     margin-top: 90%;
 }
 
+.centerme_events{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 2%;
+}
 
 
 

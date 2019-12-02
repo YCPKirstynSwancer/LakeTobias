@@ -91,6 +91,10 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+button {
+  border: none;
+}
+
 h1{
    color: #D98E1D;
    font-weight: 600;
@@ -130,10 +134,25 @@ header {
  text-align: center;
  color: #072F0B;
  z-index: 100;
+ background-color: #D9D465;
+ /* fix me
  background-image: url('../img/homepgimgs/headermark.png');
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+*/
+}
+
+.sneaky {
+    background-image: url(../img/homepgimgs/headermark_sneaky.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 40px;
 }
 
 .headimg{
@@ -234,10 +253,9 @@ background-size: cover;
  justify-content: center;
  align-items: flex-end;
  width: 100%;
- height: 738px;
+ height: 750px;
  position: relative;
- top: -50px;
- z-index: -50;
+ top:-40px;
  }
 
  .hero img{
@@ -263,19 +281,38 @@ background-size: cover;
    background-repeat: no-repeat;
  }
 
+ .hero3{
+  background-image: url('../img/homepgimgs/emu2.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
  .intro{
  width: 50%;
  text-align: left;
  font-size: 1.1em;
- height: 95vh;
+ height: 100vh;
  position: relative;
  }
 
+ /* Made some changes here */
+
  .positionme {
-    left: 105%;
-    position: relative;
-    top: 35%;
+  left: 20%;
+  position: relative;
+  top: 5%;
+  padding: 2%;
 }
+
+.slick-prev:before, .slick-next:before {
+  font-size: 40px !important;
+  color: #D9D465 !important;
+}
+
+/* Made changes above */
+
+
 .positionmeemu {
    left: 20%;
    position: relative;
@@ -308,7 +345,7 @@ button.slick-next.slick-arrow {
 
 footer {
     width: 100%;
-    height: 215px;
+    height: 230px;
     text-align: center;
     color: #072F0B;
     z-index: 100;
@@ -316,6 +353,13 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    bottom: 0;
+   }
+
+   .stickyfooter{
+     position: absolute;
+     bottom: 0;
    }
 
    .footer-area{
@@ -369,9 +413,7 @@ footer {
 }
 
 .footerlogo img{
-  max-width: 100%;
-  min-width: 300px;
-
+  width: 200px;
 }
 
    .socialmedialinks{
@@ -384,9 +426,12 @@ footer {
    }
 
    .socialmedialinks img{
-     width:75px;
-     margin: 3px;
-     margin: 0px 8px 0px 8px;
+     width:55px;
+     margin: 1%;
+   }
+
+   .socialmedialinks img:hover{
+     opacity: .5;
    }
 
    footer nav{
@@ -423,7 +468,7 @@ footer {
 }
 
 .centerme_about{
-  width: 90%;
+  width: 76%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -472,7 +517,6 @@ footer {
   margin-left: 0;
 }
 
-
 .right_maincontent{
   display: flex;
   justify-content: center;
@@ -482,6 +526,11 @@ footer {
   padding: 2%;
 }
 
+.modal a.close-modal {
+  position: absolute;
+  top: 17.5px !important;
+  right: 12.5px !important;
+}
 
 
 /* ==========================================================================
@@ -499,7 +548,10 @@ footer {
 
 .CenterSection h1 {
     position: relative;
-    left: -344px;
+}
+
+.CenterSection h2 {
+  text-align: right;
 }
 
 .center_content {
@@ -507,6 +559,32 @@ footer {
     justify-content: center;
     flex-direction: column;
     width: 65%;
+}
+
+.animallinks img{
+  width: 30px;
+}
+
+.squeezeme {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 15%;
+}
+
+.resizeimg{
+  width: 100%;
+  height: auto;
+}
+
+.registerbtn{
+  width: 280px;
+    height: 70px;
+    background-color: #86C3B1;
+    color: #072F0B;
+    font-size: 28px;
+    cursor: pointer;
 }
 
 .About_Section{
@@ -517,12 +595,7 @@ footer {
   font-size: 28px;
   line-height: 2.5em;
 }
-.About_Section_2lines{
-  flex-direction: row;
-  display: flex;
-  text-align: left;
-  color: #072F0B;
-  font-size: 28px;
+.shorty{
   line-height: 1.2em;
 }
 
@@ -540,7 +613,7 @@ footer {
   color: #86C3B1
 }
 
-img.deerlink:hover {
+.About_Section a:hover img {
     display: inline;
 }
 
@@ -631,6 +704,7 @@ img.deerlink:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 2% 0% 2% 0;
 }
 
 .AnimalImages{
@@ -709,8 +783,7 @@ img.deerlink:hover {
 }
 .modal{
   width: auto;
-  height:85vh;
-  overflow-y: scroll;
+  height:auto;
 }
 /*End Animal Modal Images*/
 

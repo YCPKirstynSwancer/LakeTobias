@@ -900,11 +900,18 @@ footer {
   justify-content: center;
   align-items: center;
   width: 374px;
+  margin: 0 auto;
 }
 .modal{
   width: auto;
   height:auto;
 }
+
+.modal h3{
+    text-align: center;
+}
+
+
 /*End Animal Modal Images*/
 
 
@@ -1136,7 +1143,11 @@ footer {
   /* Footer */
 
   .footeraddress{
-  font-size: 10px;
+  font-size: 15px;
+  }
+
+  .footeraddress p{
+  line-height: 1.2em;
   }
 
   .footerlogo{
@@ -1255,7 +1266,7 @@ header nav a{
           text-decoration: none;
           margin: 1%;
           font-size: .50em;
-
+}
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
@@ -1275,7 +1286,7 @@ header nav a{
   }
 
   img.homelogo {
-    width: 80px;
+    width: 30em;
 }
 /* ==========================================================================
    Print styles.

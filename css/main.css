@@ -95,12 +95,18 @@ button {
   border: none;
 }
 
+
 h1{
    color: #D98E1D;
    font-weight: 600;
    font-size: 3.2rem;
    margin: 0 auto;
    line-height: 3rem;
+ }
+
+ p{
+   margin: 9px 0 9px 0;
+   line-height: 1.5rem;
  }
 
  #myBtn {
@@ -190,6 +196,66 @@ background-size: cover;
   height:auto;
 }
 
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 100%;
+position: relative;
+margin: auto;
+margin-top: -40px;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
 
 /* ----- Mobile Menu ---- */
 
@@ -197,7 +263,7 @@ background-size: cover;
   height: 250px;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     top: 0;
     right: 0;
     background-color: #072F0B;
@@ -214,6 +280,8 @@ background-size: cover;
   color: #FFFEDD;
   display: block;
   transition: 0.3s;
+  position: relative;
+  top: -30px;
 }
 
 .sidenav a:hover {
@@ -246,6 +314,7 @@ background-size: cover;
 
 /* Homepage Hero */
 
+
 .hero{
  position: relative;
  display: flex;
@@ -253,8 +322,7 @@ background-size: cover;
  justify-content: center;
  align-items: flex-end;
  width: 100%;
- height: 750px;
- position: relative;
+ height: 100%;
  top:-40px;
  }
 
@@ -268,21 +336,23 @@ background-size: cover;
  }
 
  .hero1{
-   background-image: url('../img/homepgimgs/Giraffe2.jpg');
+   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../img/homepgimgs/Giraffe2.jpg');
    background-size: cover;
    background-position: center center;
    background-repeat: no-repeat;
+
+
  }
 
  .hero2{
-   background-image: url('../img/homepgimgs/emu2.jpg');
+   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../img/homepgimgs/minihorse.jpg');
    background-size: cover;
    background-position: center center;
    background-repeat: no-repeat;
  }
 
  .hero3{
-  background-image: url('../img/homepgimgs/emu2.jpg');
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../img/homepgimgs/emu2.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -299,7 +369,7 @@ background-size: cover;
  /* Made some changes here */
 
  .positionme {
-  left: 20%;
+  left: 10%;
   position: relative;
   top: 5%;
   padding: 2%;
@@ -312,14 +382,19 @@ background-size: cover;
 
 /* Made changes above */
 
+.positionmehorse {
+ left: 50%;
+ position: relative;
+ top: 62%;
+ padding: 2%;
+ color: #FFFEDD;
+}
 
 .positionmeemu {
    left: 20%;
    position: relative;
    top: 10%;
-}
-.positionmeemu h2{
-  color: #FFFEDD;
+   color: #FFFEDD
 }
 /* End Homepage Hero */
 
@@ -342,6 +417,21 @@ button.slick-next.slick-arrow {
 }
 
     /* Footer Section */
+
+footer.home {
+        width: 100%;
+        height: 230px;
+        text-align: center;
+        color: #072F0B;
+        z-index: 100;
+        background-image: url('../img/homepgimgs/footermark.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        bottom: 0;
+        margin-top: -60px;
+       }
 
 footer {
     width: 100%;
@@ -369,6 +459,7 @@ footer {
      align-items: center;
      flex-direction: row;
      margin: 0 auto;
+     padding-top: 30px;
    }
 
 .footeraddress{
@@ -389,20 +480,25 @@ footer {
      align-items: center;
      margin-top: 4%;
      width: 100%;
+    background-image: url('../img/backgroundboardwide.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
    }
 
 .footerdirections button{
-  width: 280px;
-  height: 70px;
-  background-color: #86C3B1;
+  width: 200px;
+  height: auto;
   color: #072F0B;
   font-size: 28px;
   cursor: pointer;
+  background-color: rgba(255, 0, 0, 0);
 }
 
-.footerdirections button:hover{
-  background-color: #D98E1D;
+.footerdirections:hover{
+  background-image: url('../img/backgroundboardwidehover.svg');
 }
+
 
 .footerlogo{
   display: flex;
@@ -477,7 +573,7 @@ footer {
 }
 
 .centerme_about h2{
-  text-align: right;
+  text-align: left;
   padding-right: 3%;
 }
 
@@ -580,11 +676,18 @@ footer {
 
 .registerbtn{
   width: 280px;
-    height: 70px;
-    background-color: #86C3B1;
-    color: #072F0B;
-    font-size: 28px;
-    cursor: pointer;
+  color: #072F0B;
+  height: 70px;
+  font-size: 28px;
+  cursor: pointer;
+  background-image: url('../img/backgroundboardwide.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.registerbtn:hover{
+  background-image: url('../img/backgroundboardwidehover.svg');
 }
 
 .About_Section{
@@ -615,6 +718,14 @@ footer {
 
 .About_Section a:hover img {
     display: inline;
+}
+
+.accordionshow{
+  display: none;
+}
+
+.pushdown{
+  margin-top: 55px;
 }
 
 .deerlink{
@@ -659,7 +770,15 @@ footer {
   height: auto;
 }
 
+.content_img{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  }
 
+.content_img img{
+  width: 100%;
+  height: auto;
+}
 
 
 
@@ -689,6 +808,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 #SmoothScrollFish {
@@ -842,7 +962,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 90%;
+    margin-top: 50%;
 }
 
 .centerme_events{
@@ -1013,7 +1133,21 @@ footer {
 
 
 @media only screen and (max-width: 768px) {
-    /* Style adjustments for viewports that meet the condition */
+  /* Footer */
+
+  .footeraddress{
+  font-size: 10px;
+  }
+
+  .footerlogo{
+    display: none;
+  }
+
+  .socialmedialinks img{
+    width:40px;
+    margin: 2%;
+  }
+
 
     .Schedule{
     font-size: 80%;
@@ -1033,7 +1167,60 @@ footer {
      display: flex;
    }
 
+   .abouthide{
+     display: none;
+   }
+
+   .accordionshow{
+     display: flex;
+     justify-content: center;
+   }
+   .accordion{
+     width: 80%;
+   }
+
+   .panel{
+     width: 80%;
+   }
+
+   .panel p{
+     font-size: 0.85em;
+   }
+
+   .main_content {
+    width: 100%;
+}
+
+   .about_intro_content h1{
+     font-size: 2em;
+   }
+
+   .about_intro_content p{
+     font-size: 0.85em;
+   }
+
+   .About_Section{
+     font-size: 1.25em;
+     width: 480%
+  }
+
+  .centerme {
+      flex-direction: column;
+  }
+
+  .sidebar_content{
+      margin: 0 auto;
+}
+
+
+
+
+
+
  }
+
+
+
 
 @media only screen and (max-width: 400px) {
     /* Style adjustments for viewports that meet the condition */
@@ -1042,6 +1229,7 @@ footer {
     text-align: center;
 
 }
+
 
 header nav a{
     color: #000;

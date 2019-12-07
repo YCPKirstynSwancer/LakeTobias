@@ -385,7 +385,7 @@ to {opacity: 1}
 .positionmehorse {
  left: 50%;
  position: relative;
- top: 62%;
+ top: 55%;
  padding: 2%;
  color: #FFFEDD;
 }
@@ -676,18 +676,14 @@ footer {
 
 .registerbtn{
   width: 280px;
-  color: #072F0B;
+  color: #fff;
   height: 70px;
   font-size: 28px;
   cursor: pointer;
-  background-image: url('../img/backgroundboardwide.svg');
+  background-image: url('../img/backgroundboardnoclick.svg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-.registerbtn:hover{
-  background-image: url('../img/backgroundboardwidehover.svg');
 }
 
 .About_Section{
@@ -965,11 +961,12 @@ footer {
 
 /*End Accordian Monthly Events*/
 
-.Registerbutton {
+.Register {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 50%;
+    flex-direction: column;
 }
 
 .centerme_events{
@@ -989,7 +986,7 @@ footer {
    /* Contact Us */
 
    .contactUs{
-     width: 90vw;
+     width: 90%;
    }
 
    .contactUs_content{
@@ -1001,11 +998,10 @@ footer {
      align-items: center;
      margin: 0 auto;
      width: 80%;
-     padding: 1%;
    }
 
    input{
-     width: 500px;
+     width: 450px;
      border: none;
      margin: 5px;
      height: 30px;
@@ -1015,8 +1011,8 @@ footer {
    }
 
    textarea{
-     width: 525px;
-     min-height: 500px;
+     width: 450px;
+     min-height: 450px;
      border: none;
      margin: 5px;
      height: 30px;
@@ -1025,22 +1021,35 @@ footer {
    }
 
    input.Submit_Button{
-     width: 200px !important;
-     height: 50px;
-     color: black;
-     background-color: #86C3B1;
-     position: relative;
-     box-shadow: none;
-     margin-left: 33%;
+     background-color: rgba(255, 0, 0, 0);
+     margin: 0 auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 250px;
+     height: 70px;
+     font-size: 20px;
+     cursor: pointer;
+     background-image: url('../img/backgroundboardwide.svg');
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-size: contain;
    }
 
    input.Submit_Button:hover{
-     background-color: #D98E1D;
-     color: #000;
+     background-image: url('../img/backgroundboardwidehover.svg');
+
    }
 
 
+.left_maincontent iframe{
+margin-top: 25px;
+width: 100%;
+}
 
+.mailing_address p{
+  margin-top: 50%;
+}
 
 
 
@@ -1140,8 +1149,26 @@ footer {
 
 
 @media only screen and (max-width: 768px) {
-  /* Footer */
+/*homepage intro titling*/
+  .positionme h1{
+    font-size: 2em;
+  }
+  .positionmehorse h2{
+    font-size: 1em;
+  }
+  .positionmehorse{
+    top: 50%;
+  }
 
+  .positionmeemu h2{
+    font-size: 1em;
+  }
+/*Header*/
+.homelogo{
+  padding: 40px 0 0 0;
+}
+
+  /* Footer */
   .footeraddress{
   font-size: 15px;
   }
@@ -1223,8 +1250,17 @@ footer {
       margin: 0 auto;
 }
 
+/*Plan Your Visit*/
+.mailing_address p{
+  margin-top: 0;
+}
+input{
+  width: 350px;
+}
 
-
+textarea{
+  width: 350px;
+}
 
 
 

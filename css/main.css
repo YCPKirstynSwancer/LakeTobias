@@ -345,14 +345,14 @@ to {opacity: 1}
  }
 
  .hero2{
-   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../img/homepgimgs/minihorse.jpg');
+   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../img/homepgimgs/TourGuide.jpg');
    background-size: cover;
    background-position: center center;
    background-repeat: no-repeat;
  }
 
  .hero3{
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../img/homepgimgs/emu2.jpg');
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../img/homepgimgs/Eland.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1170,7 +1170,8 @@ width: 100%;
 
   /* Footer */
   .footeraddress{
-  font-size: 15px;
+  font-size: 10px;
+  margin-top: 25px;
   }
 
   .footeraddress p{
@@ -1181,9 +1182,18 @@ width: 100%;
     display: none;
   }
 
+  .footerdirections {
+    margin-top: 0%;
+    width: 60%;
+}
+
+.footerdirections button {
+  font-size: 20px;
+}
+
   .socialmedialinks img{
-    width:40px;
-    margin: 2%;
+    width:30px;
+    margin: 0 20px 0 20px;
   }
 
 

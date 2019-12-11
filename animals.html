@@ -24,20 +24,16 @@
     <a href="about.html" class="hideme">About</a>
     <a href="animals.html" class="hideme">Animals</a>
     <a href="education.html" class="hideme">Education</a>
-    <a href="planyourvisit.html" class="hideme">Plan Your Visit</a>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="hamburger">&#9776;</span>
+    <a class="hideme" href="planyourvisit.html">Plan Your Visit</a>
+    <span class="hamburger" onclick="openNav()" style="font-size:30px;cursor:pointer">&#9776;</span>
   </nav>
 
 </header>
 
-<!-- Mobile Menu -->
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="about.html">About</a>
-  <a href="animals.html">Animals</a>
-  <a href="education.html">Education</a>
-  <a href="planyourvisit.html">Plan Your Visit</a>
-</div>
+<div class="sidenav" id="mySidenav">
+  <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a> <a href="about.html">About</a> <a href="animals.html">Animals</a> <a href="education.html">Education</a> <a href="planyourvisit.html">Plan Your Visit</a>
+</div><!-- End Mobile Menu -->
+
 
 <!-- End Mobile Menu -->
 <!-- This is your main section after the header navbar-->
@@ -841,13 +837,15 @@
          <a href="https://www.google.com/maps/place/Lake+Tobias+Wildlife+Park/@40.5001561,-76.8930305,17z/data=!3m1!4b1!4m5!3m4!1s0x89c8cb0d444caf15:0x9f0b65011c247d74!8m2!3d40.5001561!4d-76.8908418" target="_blank"><button>Directions</button></a>
        </div>
 
-        <div class="socialmedialinks">
-          <img src="img/instagramlogo.png">
-          <img src="img/facebooklogo.png">
-        </div>
-        <div class="footerlogo">
-          <a href="index.html"><img src="img/LakeTobiasLogo.svg" class="homelogo"></a>
-        </div>
+       <div class="socialmedialinks">
+         <a href="https://www.instagram.com/laketobias/"><img src="img/instagramlogo.png"></a>
+           <a href="https://www.facebook.com/laketobiaswildlifepark/"><img src="img/facebooklogo.png"></a>
+           </div>
+           <div class="footerlogo">
+             <a href="index.html">
+               <img src="img/LakeTobiasLogo.svg" class="homelogo">
+               </a>
+             </div>
       </div>
     </footer>
 
@@ -859,9 +857,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="js/main.js">
+</script>
 
 <script src="js/plugins.js"></script>
-<script src="js/backtotop.js">
+<script src="js/vendor/backtotop.js">
 </script>
 
 </html>

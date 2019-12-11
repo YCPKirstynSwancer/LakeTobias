@@ -260,24 +260,25 @@ to {opacity: 1}
 /* ----- Mobile Menu ---- */
 
 .sidenav {
-  height: 250px;
+  height: 350px;
     width: 0;
     position: fixed;
     z-index: 1000;
     top: 0;
     right: 0;
-    background-color: #072F0B;
+    background-color: #86C3B1;
+    opacity: 95%;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
-    top: 113px;
+    padding-top: 120px;
+
 }
 
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #FFFEDD;
+  color: #072F0B;
   display: block;
   transition: 0.3s;
   position: relative;
@@ -285,12 +286,13 @@ to {opacity: 1}
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #FFFEDD;
 }
 
 .sidenav .closebtn {
   position: absolute;
   top: 0;
+  padding-top: 45px;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
@@ -336,7 +338,7 @@ to {opacity: 1}
  }
 
  .hero1{
-   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../img/homepgimgs/Giraffe2.jpg');
+   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url('../img/homepgimgs/Giraffe2.jpg');
    background-size: cover;
    background-position: center center;
    background-repeat: no-repeat;
@@ -345,14 +347,14 @@ to {opacity: 1}
  }
 
  .hero2{
-   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../img/homepgimgs/TourGuide.jpg');
+   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url('../img/homepgimgs/TourGuide.jpg');
    background-size: cover;
    background-position: center center;
    background-repeat: no-repeat;
  }
 
  .hero3{
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../img/homepgimgs/Eland.jpg');
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45)), url('../img/homepgimgs/Eland.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -459,7 +461,7 @@ footer {
      align-items: center;
      flex-direction: row;
      margin: 0 auto;
-     padding-top: 30px;
+     padding-top: 30px;;
    }
 
 .footeraddress{
@@ -468,6 +470,7 @@ footer {
   align-items: center;
   margin-top: 4%;
   width: 100%;
+  font-size: 18px
 }
 
 .boldme{
@@ -484,6 +487,7 @@ footer {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+    height: 65px;
    }
 
 .footerdirections button{
@@ -523,7 +527,7 @@ footer {
 
    .socialmedialinks img{
      width:55px;
-     margin: 1%;
+     margin: 5%;
    }
 
    .socialmedialinks img:hover{
@@ -977,6 +981,23 @@ footer {
   margin: 2%;
 }
 
+.centerme_events_special h3{
+  width: 90%;
+  margin: 1%;
+  text-align: center;
+}
+
+.centerme_events h3{
+  text-align: left;
+  width: 30%;
+  margin-right: 2%;
+}
+
+.centerme_events p{
+  text-align: left;
+  width: 65%;
+}
+
 
 
 
@@ -1052,7 +1073,289 @@ width: 100%;
 }
 
 
+/* ==========================================================================
+   Map
+   ========================================================================== */
 
+   .MapLayout{
+     height: 1000px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0 auto;
+     overflow-x: scroll;
+   }
+
+   .Map {
+     width: 3000px;
+     height: 1900px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin: 0 auto;
+       position: absolute;
+       top: 0px;
+       left: 0px;
+       background-image: url('../img/LakeTobiasMap.svg');
+       background-repeat: no-repeat;
+       background-size: cover;
+   }
+
+   .animallink{
+     background-color: green;
+     z-index: 1;
+   }
+
+  .animallink:hover{
+    opacity: 0;
+  }
+
+#bison {
+    position: relative;
+    top: -28%;
+    right: 34.2%;
+    width: 50px;
+    height: 50px;
+}
+#deer {
+  position: relative;
+  top: -37%;
+  right: 44%;
+  width: 50px;
+  height: 50px;
+}
+
+#deer2 {
+  position: relative;
+  top: -43%;
+  right: 37.8%;
+  width: 50px;
+  height: 50px;
+}
+
+#waterbuffalo {
+  position: relative;
+  top: -43%;
+  right: 47%;
+  width: 50px;
+  height: 50px;
+}
+
+#waterbuffalo {
+  position: absolute;
+  top: 10%;
+  right: 81%;
+  width: 50px;
+  height: 50px;
+}
+
+#giraffe {
+  position: absolute;
+  top: 40%;
+  right: 92.3%;
+  width: 50px;
+  height: 50px;
+}
+
+#smallcat {
+  position: absolute;
+  top: 43%;
+  right: 75%;
+  width: 50px;
+  height: 50px;
+}
+
+#smallcat {
+  position: absolute;
+  top: 45.7%;
+  right: 80.5%;
+  width: 50px;
+  height: 50px;
+}
+
+#peacock {
+  position: absolute;
+  top: 55%;
+  right: 79.2%;
+  width: 50px;
+  height: 50px;
+}
+
+#bigantler {
+  position: absolute;
+  top: 26%;
+  right: 75.7%;
+  width: 50px;
+  height: 50px;
+}
+
+#buffalo {
+  position: absolute;
+  top: 15.5%;
+  right: 72.5%;
+  width: 50px;
+  height: 50px;
+}
+
+#bigantler2 {
+  position: absolute;
+  top: 10.5%;
+  right: 68%;
+  width: 50px;
+  height: 50px;
+}
+
+#moose {
+  position: absolute;
+  top: 22.7%;
+  right: 69.2%;
+  width: 50px;
+  height: 50px;
+}
+
+#waterbuffalo2 {
+  position: absolute;
+  top: 32%;
+  right: 70.6%;
+  width: 50px;
+  height: 50px;
+}
+
+#bigasscow {
+  position: absolute;
+  top: 15%;
+  right: 64.7%;
+  width: 50px;
+  height: 50px;
+}
+
+#ostrich {
+  position: absolute;
+  top: 10.5%;
+  right: 59.3%;
+  width: 50px;
+  height: 50px;
+}
+
+#bighorn {
+  position: absolute;
+  top: 22.1%;
+  right: 55%;
+  width: 50px;
+  height: 50px;
+}
+
+#wolf_ithink {
+  position: absolute;
+  top: 13.1%;
+  right: 51.7%;
+  width: 50px;
+  height: 50px;
+}
+
+#tina_fatlard {
+  position: absolute;
+  top: 22.5%;
+  right: 49.9%;
+  width: 50px;
+  height: 50px;
+}
+
+#evilwolf {
+  position: absolute;
+  top: 17%;
+  right: 46%;
+  width: 50px;
+  height: 50px;
+}
+
+#zebra {
+  position: absolute;
+  top: 12%;
+  right: 43.3%;
+  width: 50px;
+  height: 50px;
+}
+
+#emu {
+  position: absolute;
+  top: 19.5%;
+  right: 41.5%;
+  width: 50px;
+  height: 50px;
+}
+
+#lion_ithink {
+  position: absolute;
+  top: 36.2%;
+  right: 32.1%;
+  width: 50px;
+  height: 50px;
+}
+
+#baboon {
+  position: absolute;
+  top: 35.2%;
+  right: 29.3%;
+  width: 50px;
+  height: 50px;
+}
+
+#capybara {
+  position: absolute;
+  top: 22.2%;
+  right: 28.7%;
+  width: 50px;
+  height: 50px;
+}
+
+#crocodile {
+  position: absolute;
+  top: 30.7%;
+  right: 26.3%;
+  width: 50px;
+  height: 50px;
+}
+
+#zebra2 {
+  position: absolute;
+  top: 12.5%;
+  right: 19.4%;
+  width: 50px;
+  height: 50px;
+}
+
+#ostrich2 {
+  position: absolute;
+  top: 13.7%;
+  right: 14.4%;
+  width: 50px;
+  height: 50px;
+}
+
+#bigcat {
+  position: absolute;
+  top: 25.2%;
+  right: 21.7%;
+  width: 50px;
+  height: 50px;
+}
+
+#bear {
+  position: absolute;
+  top: 29.8%;
+  right: 16.7%;
+  width: 50px;
+  height: 50px;
+}
+
+#weirddeer {
+    position: absolute;
+    top: 37.8%;
+    right: 22%;
+    width: 50px;
+    height: 50px;
+}
 
 
 
@@ -1168,44 +1471,13 @@ width: 100%;
   padding: 40px 0 0 0;
 }
 
-  /* Footer */
-  .footeraddress{
-  font-size: 10px;
-  margin-top: 25px;
-  }
-
-  .footeraddress p{
-  line-height: 1.2em;
-  }
-
-  .footerlogo{
-    display: none;
-  }
-
-  .footerdirections {
-    margin-top: 0%;
-    width: 60%;
-}
-
-.footerdirections button {
-  font-size: 20px;
-}
-
-  .socialmedialinks img{
-    width:30px;
-    margin: 0 20px 0 20px;
-  }
-
+/*plan visit*/
 
     .Schedule{
     font-size: 80%;
     text-align: center;
 }
 
-   .footer-area{
-     flex-direction: column;
-     justify-content: center;
-   }
 
    .hideme{
      display: none;
@@ -1231,6 +1503,17 @@ width: 100%;
      width: 80%;
    }
 
+/*Mobile Park Info*/
+.squeezeme{
+  margin: 0 auto;
+}
+/*End Mobile Park Info*/
+.ParkInfoBreak{
+  justify-content: left;
+  flex-direction: row;
+}
+
+
    .panel p{
      font-size: 0.85em;
    }
@@ -1249,7 +1532,7 @@ width: 100%;
 
    .About_Section{
      font-size: 1.25em;
-     width: 480%
+     width: 100%
   }
 
   .centerme {
@@ -1272,6 +1555,44 @@ textarea{
   width: 350px;
 }
 
+/*Education Page*/
+.Register{
+  margin-top: 0%
+}
+
+
+
+
+
+
+/* Footer */
+.footeraddress{
+font-size: 15px;
+margin-top: 65px;
+}
+
+.footeraddress p{
+line-height: 1.2em;
+}
+
+.footerlogo{
+  display: none;
+}
+
+.footerdirections {
+  margin-top: 65px;
+  width: 60%;
+}
+
+.footerdirections button {
+font-size: 30px;
+}
+
+.socialmedialinks img{
+  width:40px;
+  margin: 50px 20px 0 20px;
+}
+
 
 
  }
@@ -1279,7 +1600,7 @@ textarea{
 
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 460px) {
     /* Style adjustments for viewports that meet the condition */
     .Schedule{
     font-size: 80%;
@@ -1297,9 +1618,58 @@ header nav a{
 
 .footer-area{
   flex-direction: column;
-
 }
 
+/* Footer */
+.footer-area{
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footeraddress{
+font-size: 10px;
+margin-top: 25px;
+}
+
+.footeraddress p{
+line-height: 1.2em;
+}
+
+.footerlogo{
+  display: none;
+}
+
+.footerdirections {
+  margin: 0 auto;
+  width: 40%;
+  height: 40px;
+}
+
+.footerdirections button {
+font-size: 20px;
+}
+
+.socialmedialinks img{
+  width:30px;
+  margin: 0 20px 0 20px;
+}
+
+
+/*modal animal page*/
+.modal img {
+    width: 250px;
+}
+
+/*accordion sizing on education page*/
+.centerme_events h3{
+  font-size: 15px;
+}
+.panel p{
+  font-size: 0.75em;
+}
+
+
+}
 
 @media only screen and (max-width: 350px) {
     /* Style adjustments for viewports that meet the condition */
@@ -1333,6 +1703,8 @@ header nav a{
 
   img.homelogo {
     width: 30em;
+}
+
 }
 /* ==========================================================================
    Print styles.

@@ -1567,11 +1567,11 @@ end do on break*/
   margin-top: 0;
 }
 input{
-  width: 350px;
+  width: 300px;
 }
 
 textarea{
-  width: 350px;
+  width: 300px;
 }
 
 /*Education Page*/
@@ -1681,7 +1681,7 @@ font-size: 20px;
 
 /*accordion sizing on education page*/
 .centerme_events h3{
-  font-size: 15px;
+  font-size: 13px;
 }
 .panel p{
   font-size: 0.75em;

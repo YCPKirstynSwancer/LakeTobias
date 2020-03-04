@@ -1108,98 +1108,106 @@ width: 100%;
    }
 
 
-/* figure out on break
+
 
    .animallink{
      z-index: 1;
    }
-
+/* show this at the end for correct hover. Also change hover opacity to 100%
+.animallink{
+  opacity: 0;
+}*/
   .animallink:hover{
     opacity: 0;
   }
 
 #alligator {
-    background-image: url('../img/animalhover/alligator.svg');
+    background-image: url('../animalhover/alligator.svg');
     position: relative;
-    top: -25.8%;
-    right: -23.2%;
+    top: -491px;
+    right: -705px;
     width: 56px;
     height: 56px;
 }
 #alpaca {
-  background-image: url('../img/animalhover/alpaca.svg');
+  background-image: url('../animalhover/alpaca.svg');
   position: relative;
-  top: -1.7%;
-  right: -41.2%;
+  top: -582px;
+  right: 52px;
   width: 56px;
   height: 56px;
 }
 
 #aoudad_sheep {
-  background-image: url('../img/animalhover/aoudadsheep.svg');
+  background-image: url('../animalhover/aoudadsheep.svg');
   position: relative;
-  top: -32%;
-  right: 7.1%;
+  top: -609px;
+  right: 208px;
   width: 56px;
   height: 56px;
 }
 
 #axis_deer {
-  background-image: url('../img/animalhover/axisdeer.svg');
+  background-image: url('../animalhover/axisdeer.svg');
   position: relative;
-  top: 13%;
-  right: -41.3%;
+  top: 248px;
+  right: -1240px;
   width: 56px;
   height: 56px;
 }
 
 #baboon {
-  background-image: url('../img/animalhover/baboon.svg');
+  background-image: url('../animalhover/baboon.svg');
   position: absolute;
-  top: 28.8%;
-  right: 29.7%;
+  top: 541px;
+  right: 886px;
   width: 56px;
   height: 56px;
 }
 
 #bear {
+  background-image: url('../animalhover/bear.svg');
   position: absolute;
-  top: 40%;
-  right: 92.3%;
-  width: 50px;
-  height: 50px;
+  top: 454px;
+  right: 548px;
+  width: 56px;
+  height: 56px;
 }
 
 #bison {
+  background-image: url('../animalhover/bison.svg');
   position: absolute;
-  top: 43%;
-  right: 75%;
-  width: 50px;
-  height: 50px;
+  top: 254px;
+  right: 2666px;
+  width: 56px;
+  height: 56px;
 }
 
 #bobcat {
+  background-image: url('../animalhover/bobcat.svg');
   position: absolute;
-  top: 45.7%;
-  right: 80.5%;
-  width: 50px;
-  height: 50px;
+  top: 770px;
+  right: 807px;
+  width: 56px;
+  height: 56px;
 }
 
 #camel {
+  background-image: url('../animalhover/camel.svg');
   position: absolute;
-  top: 55%;
-  right: 79.2%;
-  width: 50px;
-  height: 50px;
+  top: 884px;
+  right: 94px;
+  width: 56px;
+  height: 56px;
 }
 
 #capybara {
+  background-image: url('../animalhover/capybara.svg');
+  top: 294px;
+  right: 834px;
   position: absolute;
-  top: 26%;
-  right: 75.7%;
-  width: 50px;
-  height: 50px;
+  width: 56px;
+  height: 56px;
 }
 
 #deer {
@@ -1211,11 +1219,12 @@ width: 100%;
 }
 
 #donkey {
+  background-image: url('../animalhover/donkey.svg');
   position: absolute;
-  top: 10.5%;
-  right: 68%;
-  width: 50px;
-  height: 50px;
+  top: 1327px;
+  right: 780px;
+  width: 56px;
+  height: 56px;
 }
 
 #eland {
@@ -1370,7 +1379,7 @@ width: 100%;
     height: 50px;
 }
 
-end do on break*/
+
 
 
 
@@ -1567,11 +1576,11 @@ end do on break*/
   margin-top: 0;
 }
 input{
-  width: 300px;
+  width: 350px;
 }
 
 textarea{
-  width: 300px;
+  width: 350px;
 }
 
 /*Education Page*/
@@ -1681,7 +1690,7 @@ font-size: 20px;
 
 /*accordion sizing on education page*/
 .centerme_events h3{
-  font-size: 13px;
+  font-size: 15px;
 }
 .panel p{
   font-size: 0.75em;
